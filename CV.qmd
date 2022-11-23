@@ -1,0 +1,51 @@
+---
+title: "CV"
+name: Jon
+surname: Reades
+position: "Associate Professor"
+address: |
+         | Centre for Advanced Spatial Analysis
+         | University College London (UCL)
+         | London, U.K.
+phone: "+44 797 698 7392"
+www: https://www.ucl.ac.uk/bartlett/casa/people/dr-jonathan-reades
+email: "j.reades@ucl.ac.uk"
+orcid: 0000-0002-1443-9263
+github: jreades
+publons: 2897251
+#researchgate: 7004827878
+googlescholar: jreades
+#date: "`r format(Sys.time(), '%B %Y')`"
+date: today
+date-format: "D MMMM YYYY"
+output: 
+  vitae::awesomecv:
+    page_total: true
+    extra_dependencies: ["flafter"]
+---
+
+```{python load-bib, python.reticulate=FALSE}
+#| echo: false
+import os
+from bib import load_bib, filter_bib, sort_bib
+
+bib_db  = load_bib(os.path.join('assets','pubs.bib'))
+my_pubs = filter_bib(bib_db, {'year':'<2017', 'priority':'<2'}, {'priority':'1'}) #'ENTRYTYPE':'article', 
+
+for p in sort_bib(my_pubs, '-ENTRYTYPE', 'priority', '-year'):
+  print('###########')
+  print(f"{p['title'][:25]}: {p['ENTRYTYPE']}, {p['priority']}, {p['year']}")
+```
+```{r knitr-setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      warning = FALSE, 
+                      message = FALSE,
+                      fig.show='asis', 
+                      out.width="0.6\\linewidth", 
+                      fig.align='center')
+```
+
+```{r current-year}
+# Retrieve current year
+current_year <- as.numeric(as.character(Sys.time(), '%Y')) # Update year
+```
