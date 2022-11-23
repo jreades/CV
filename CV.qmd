@@ -24,18 +24,41 @@ output:
     extra_dependencies: ["flafter"]
 ---
 
+# Publications 
+
 ```{python load-bib, python.reticulate=FALSE}
 #| echo: false
 import os
-from bib import load_bib, filter_bib, sort_bib
+from quikbib import load_bib, filter_bib 
+from quiksort import sort_records
 
-bib_db  = load_bib(os.path.join('assets','pubs.bib'))
-my_pubs = filter_bib(bib_db, {'year':'<2017', 'priority':'<2'}, {'priority':'1'}) #'ENTRYTYPE':'article', 
+#my_pubs = filter_bib(load_bib(os.path.join('assets','pubs.bib')), 
+#                    {'year':'<2017', 'priority':'<2'}, {'priority':'1', 'foo':'baz'})
 
-for p in sort_bib(my_pubs, '-ENTRYTYPE', 'priority', '-year'):
-  print('###########')
-  print(f"{p['title'][:25]}: {p['ENTRYTYPE']}, {p['priority']}, {p['year']}")
+my_pubs = filter_bib(load_bib(os.path.join('assets','pubs.bib')), {}, {'priority':'1', 'foo':'baz'})
+
+for p in sort_records(my_pubs, '-year'):
+  print(f"{p['title'][:25]}: {p['ENTRYTYPE']}, {p['priority']}, {p['year']}, {p['foo']}")
 ```
+
+# About me
+
+ * My undergraduate degree was in Comparative Literature, but I graduated in the (first) dot.com boom and learned coding-by-doing.
+ * My areas of interest include neighbourhoods, .
+
+# Education
+
+```{python education-details, python.reticulate=FALSE}
+#| echo: false
+import os
+from quikcsv import load_csv, filter_csv
+from quiksort import sort_records
+
+edf = filter_csv(load_csv(os.path.join('assets','education.csv')), {}, {'foo':'bar'})
+for v in sort_records(edf, '-Year'):
+  print(f"{v['Institution']}, {v['Year']}, {v['foo']}")
+```
+
 ```{r knitr-setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, 
                       warning = FALSE, 
