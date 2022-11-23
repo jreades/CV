@@ -1,4 +1,7 @@
-Degree,Year,Institution,Where,Thesis
-PhD,1997-2000,Tohoku Unversity,"Sendai, Japan",Thesis Title: Applied Statistical Analysis of Geographically Detailed Data with Emphasis on Spatial Effects
-M.Sc.,1995-1997,Tohoku Unversity,"Sendai, Japan",Thesis Title: Evaluation of Environmental Changes Caused by Urbanization
-B.Eng.,1989-1993,Instituto Tecnol\'{o}gico y de Estudios Superiores de Monterrey,"Monterrey, Mexico",NA
+Degree,Year,Institution,Where,Thesis,Supervisors,Priority
+MPhil/PhD (Town Planning),2005-2010,UCL,"London, U.K.",The Place of Telecommunications: Spatial Decision-Making by Firms in 
+the Age of Global Communications,"Professor Sir Peter Hall & Professor Michael Batty",1
+BA (Comparative Literature),1993-1997,Princeton University,"Princeton, U.S.A",,,1
+Continuing Education,1997-2001,New York University,"New York, U.S.A.",,,2
+Continuing Education,1997-2001,School of Visual Arts,"New York, U.S.A.",,,2
+Continuing Education,2014,General Assembly,"London, U.K.",,,2

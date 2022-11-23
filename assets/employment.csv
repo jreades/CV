@@ -1,6 +1,11 @@
-Position,Year,Organization,Where,Type
-Professor, July 2014-present," School of Earth, Society and Environment, McMaster University"," Hamilton, Canada",Academic
-Associate Professor, July 2007-June 2014," School of Earth, Environment and Society, McMaster University"," Hamilton, Canada",Academic
-Assistant Professor, July 2002-June 2007," School of Geography and Earth Sciences, McMaster University"," Hamilton, Canada",Academic
-Research Fellow-Lecturer, October 2000-March 2002," Center for Northeast Asian Studies, Tohoku University"," Sendai, Japan",Academic
-Instructor-Topographical Survey Laboratory, January 1993-December 1993," Dept. of Civil Engineering, Instituto Tecnol\'{o}gico y de Estudios Superiores de Monterrey"," Monterrey, Mexico",Academic
+Position,Year,Organization,Where,Type,Comments
+Associate Professor, September 2020-present," Centre for Advanced Spatial Analysis, UCL"," London, U.K.",Academic,
+Senior Lecturer, August 2018-September 2020," Department of Geography, King's College London"," London, U.K.",Academic,
+Lecturer, September 2013-August 2018," Department of Geography, King's College London"," London, U.K.",Academic,
+Research Associate, August 2010-September 2013," Centre for Advanced Spatial Analysis, UCL"," London, U.K.",Academic,"EU-funded study of multi-scalar urban flows using novel transport and communications data."
+Affiliate Research, July 2006-July 2009," SENSEable City Lab, MIT", "Cambridge, MA, U.S.A.",Academic,"Worked on exhibition bids (including the 'Design & the Electric Mind' at New York’s MOMA), press communications, data management and knowledge sharing."
+Technical Project Manager,2002-2005, Fulcrum Analytics, "London, U.K.",Industry,"Managed a four-person team on award-winning database-mining projects worth over £1,300,000 per annum for clients including Orange and Comic Relief. Responsibilities included database design, marketing decision support, and remote management of application developer/support staff."
+Business Software Engineer,2001-2002, Fulcrum Analytics, "New York, U.S.A.",Industry,"Built software to collect and process large volumes of raw data from both observed (e.g. retail transactions and web logs) and reported (e.g. online surveys and product warranty cards) data sources."
+Software Developer,1999-2001, Fulcrum Analytics, "New York, U.S.A.",Industry,"Developed suite of online software tools to enable clients to query and analyse their data."
+Webmaster/Publisher,1997-1999, Fulcrum Analytics, "New York, U.S.A.",Industry,"Built Content Management System permitting non-technical staff to update online content."
+Design & Programming,1996-2001, Freelance, "New York, U.S.A.",Industry,"Design and development of sites for small businesses, non-profit and voluntary organisations."
